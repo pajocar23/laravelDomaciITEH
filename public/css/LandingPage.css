@@ -264,6 +264,11 @@ video {
     padding-left: 10px;
 }
 
+#logo{
+    color: rgb(62, 62, 134);
+    font-weight: 900;
+}
+
 .antialiased {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale

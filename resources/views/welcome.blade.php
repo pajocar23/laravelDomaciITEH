@@ -17,7 +17,7 @@
 <body class="antialiased">
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand titleNav" href="#">ONLINE BOOK STORE</a>
+            <a id="logo" class="navbar-brand titleNav" href="#">ONLINE BOOK STORE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
