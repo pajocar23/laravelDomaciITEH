@@ -16,7 +16,7 @@ class Book extends Model
 
     public $timestamps=false;
 
-    public function user(){
+    public function book_list(){
         return $this->belongsTo(book_list::class);
     }
 }
