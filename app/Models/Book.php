@@ -11,7 +11,7 @@ class Book extends Model
     use HasFactory;
 
     protected $fillable=[
-        'title','writer','list_id'
+        'title','writer','book_list_id'
     ];
 
     public $timestamps=false;
@@ -21,4 +21,4 @@ class Book extends Model
     }
 }
 
-
+?>

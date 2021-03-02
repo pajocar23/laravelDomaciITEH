@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Models\Book;
 use App\Models\book_list;
+use Symfony\Component\Console\Input\Input;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,21 +24,16 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 //BOOK API
-Route::get('/book', [BookApiController::class,'getAll']);
-Route::post('/book', [BookApiController::class,'insert']);
-Route::put('/book/{book}', [BookApiController::class,'update']);
-Route::delete('/book/{book}', [BookApiController::class,'destroy']);
+Route::get('/book', [BookApiController::class, 'getAll']);
+Route::get('/book/{book_list_id}', [BookApiController::class, 'getBooksInList']);
+Route::post('/book', [BookApiController::class, 'insert']);
+Route::put('/book/{book}', [BookApiController::class, 'update']);
+Route::delete('/book/{book}', [BookApiController::class, 'destroy']);
 
 //BOOK LIST API
-Route::get('/book_lists', [BookListApiController::class,'getAll']);
-Route::post('/book_lists', [BookListApiController::class,'insert']);
-Route::put('/book_lists/{book_lists}', [BookListApiController::class,'update']);
-Route::delete('/book_lists/{book_lists}', [BookListApiController::class,'destroy']);
-
-
-?>
-
-
-
+Route::get('/book_lists', [BookListApiController::class, 'getAll']);
+Route::post('/book_lists', [BookListApiController::class, 'insert']);
+Route::put('/book_lists/{book_lists}', [BookListApiController::class, 'update']);
+Route::delete('/book_lists/{book_lists}', [BookListApiController::class, 'destroy']);
 
 
